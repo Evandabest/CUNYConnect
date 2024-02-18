@@ -1,50 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
+
 <body>
-
-<header>
-    <h1>Login to Your Account</h1>
-</header>
-
-<section>
-    <form action="#" method="POST">
-        <div class="container">
-            <label for="username"><b>Username: </b></label>
-            <input type="text" placeholder="Enter Username" name="username" required>
-          <i class='bx bxs-user'></i>
-        </div>
-
-      <div class="container">
-
-            <label for="password"><b>Password: </b></label>
-            <input type="password" placeholder="Enter Password" name="password"  id = "pass" required>
+  <div class="wrapper">
+    <form action="">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required>
         <i class='bx bxs-lock'></i>
-        </div>
-
-      <div class="container"> 
-        <button type="submit">Login</button>
       </div>
 
+      <div class="remember-forgot">
+        <label><input type="checkbox"> Remember me </label>
+        <a href="forgotpass.html">Forgot password?</a>
+      </div>
 
-        <div class="container" style="background-color:#f1f1f1">
-
-          <span class="cracc">Create an account? <a href="register.html">Sign up</a></span>
-           <span class="psw">Forgot <a href="forgotpass.html">password?</a></span>
-        </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="register-link">
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+      </div>
     </form>
-</section>
-
-<footer>
-    <p>&copy; 2024 Your Social Media App. All rights reserved.</p>
-</footer>
-
+  </div>
 </body>
+
 </html>
