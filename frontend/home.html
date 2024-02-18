@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Post</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body id="home-body">
+  <div class="sticky-sidebar">
+    <nav>
+      <ul>
+        <li><img src="user-circle-solid-24.png" alt="" height="75px"></li>
+        <li><img src="chat-regular-24.png" alt="" height="75px"></li>
+        <li><img src="cog-regular-24.png" alt="" height="75px"></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="sticky-footer">
+    <img src="plus-square-solid-24.png" alt="Footer Image" class="footer-image">
+  </div>
+
+
+  <div class="search">
+    <form action="/search" method="GET">
+      <input type="text" id="search" name="q" placeholder="Search for your friends">
+      <input type="submit" value="Search">
+    </form>
+  </div>
+  
+  <div class="post-container">
+    <div class="profile-info">
+      <img src="/sources/baruch.jpeg" alt="Profile Picture">
+      <h3>baruchstudent45</h3>
+    </div>
+    <div class="post-image">
+      <img src="/sources/cunyimg.jpg" alt="Post Image">
+    </div>
+    <div id="caption">
+      <p><b>baruchstudent45:</b> Met some friends at other CUNY UwU 🤗🥺
+        #uwu #cuny #friends #besties #chat</p>
+    </div>
+    <div class="actions">
+      <button class="social" id="like" onclick="liked()"><img src="/sources/bxs-heart.svg" alt="Like">Like</button>
+      <p1 class="numbers" id="likes"><b>12</b></p1>
+
+
+      <button class="social" onclick="showcomments()""><img src=" /sources/message-dots-regular-24.png"
+        alt="Comment">Comment</button>
+      <p1 class="numbers"><b>4</b></p1>
+      <button class="social"><img src="/sources/share-solid-24.png" alt="Share">Share</button>
+      <p1 class="numbers"><b>8</b></p1>
+    </div>
+  </div>
+
+  <div class="post-container">
+    <div class="profile-info">
+      <img src="/sources/0x0.jpeg" alt="Profile Picture">
+      <h3>jjaystudent76</h3>
+    </div>
+    <div class="post-image">
+      <img src="/sources/SPOILER_image.png" alt="Post Image">
+    </div>
+    <div id="caption">
+      <p><b>jjstudent76:</b> Such a funny meme #lol #lmao #math #cs #🤓</p>
+    </div>
+    <div class="actions">
+      <button class="social" id="like" onclick="liked1()"><img src="/sources/bxs-heart.svg" alt="Like">Like</button>
+      <p1 class="numbers" id="likes1"><b>37</b></p1>
+
+      <button class="social" id="comments2"><img src="/sources/message-dots-regular-24.png"
+          alt="Comment">Comment</button>
+
+
+      <p1 class="numbers"><b>3</b></p1>
+      <button class="social"><img src="/sources/share-solid-24.png" alt="Share">Share</button>
+      <p1 class="numbers"><b>12</b></p1>
+    </div>
+
+    <div class="comment-section" id="comment-section" style="display: none;">
+      <div class="profile-infos">
+        <img src="/sources/0x0.jpeg" alt="Profile Picture">
+        <h1>jjaystudent76</h1>
+        <p1>This is funnier than all the students at jj🤣</p1>
+        <!--<input type="text" id="comment-input" placeholder="Write a comment">
+        <button onclick="submitComment()">Submit</button>
+        <button onclick="hideComments()">Close</button>
+        -->
+      </div>
+      <div class="profile-infos">
+        <img src="/sources/baruch.jpeg" alt="Profile Picture">
+        <h1>baruchstudent44</h1>
+        <p1>Ion get it😔cuz im a business major🤣🤣</p1>
+        <!--<input type="text" id="comment-input" placeholder="Write a comment">
+        <button onclick="submitComment()">Submit</button>
+        <button onclick="hideComments()">Close</button>
+        -->
+      </div>
+      <div class="profile-infos">
+        <img src="/sources/cuny.jpeg" alt="Profile Picture">
+        <h1>ccnystudent98</h1>
+        <p1>Bro just fix the elevators🗿</p1>
+        <!--<input type="text" id="comment-input" placeholder="Write a comment">
+        <button onclick="submitComment()">Submit</button>
+        <button onclick="hideComments()">Close</button>
+        -->
+      </div>
+    </div>
+
+
+    
+    <div class="post-container">
+    <div class="profile-info">
+      <img src="/sources/0x0.jpeg" alt="Profile Picture">
+      <h3>ccnystudent98</h3>
+    </div>
+    <div class="post-image">
+      <img src="/sources/IMG_6940.jpeg" alt="Post Image">
+    </div>
+    <div id="caption">
+      <p><b>jjstudent76:</b> Real #relatable #happeningtomern #💀 </p>
+    </div>
+    <div class="actions">
+      <button class="social" id="like" onclick="liked2()"><img src="/sources/bxs-heart.svg" alt="Like">Like</button>
+      <p1 class="numbers" id="likes2"><b>20</b></p1>
+
+      <button class="social" id="comments3"><img src="/sources/message-dots-regular-24.png"
+          alt="Comment">Comment</button>
+
+
+      <p1 class="numbers"><b>3</b></p1>
+      <button class="social"><img src="/sources/share-solid-24.png" alt="Share">Share</button>
+      <p1 class="numbers"><b>12</b></p1>
+    </div>
+
+    <div class="comment-section" id="comment-section" style="display: none;">
+      <div class="profile-infos">
+        <img src="/sources/0x0.jpeg" alt="Profile Picture">
+        <h1>jjaystudent76</h1>
+        <p1></p1>
+        <!--<input type="text" id="comment-input" placeholder="Write a comment">
+        <button onclick="submitComment()">Submit</button>
+        <button onclick="hideComments()">Close</button>
+        -->
+      </div>
+      <div class="profile-infos">
+        <img src="/sources/baruch.jpeg" alt="Profile Picture">
+        <h1>baruchstudent44</h1>
+        <p1>This should work in theory</p1>
+        <!--<input type="text" id="comment-input" placeholder="Write a comment">
+        <button onclick="submitComment()">Submit</button>
+        <button onclick="hideComments()">Close</button>
+        -->
+      </div>
+      <div class="profile-infos">
+        <img src="/sources/cuny.jpeg" alt="Profile Picture">
+        <h1>ccnystudent98</h1>
+        <p1>This should work in theory</p1>
+        <!--<input type="text" id="comment-input" placeholder="Write a comment">
+        <button onclick="submitComment()">Submit</button>
+        <button onclick="hideComments()">Close</button>
+        -->
+      </div>
+    </div>
+
+    <script src="/sources/script.js">
+    </script>
+</body>
+
+</html>
